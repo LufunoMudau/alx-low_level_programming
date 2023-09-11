@@ -12,9 +12,10 @@ int main(void)
 	while (digit <= 9)
 	{
 		putchar(digit + '0');
-		putchar('\n');
 		digit++;
 	}
+
+	putchar('\n');
 
 	return (0);
 }
