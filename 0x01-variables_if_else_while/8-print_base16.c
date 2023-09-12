@@ -7,19 +7,16 @@
  */
 int main(void)
 {
-	char hex_digit = '0';
+	int i;
 
-	while (hex_digit <= '9')
+	for (i = 0; i < 10; i++)
 	{
-		putchar(hex_digit);
+		putchar('0' + i);
 	}
 
-	hex_digit = 'a';
-
-	while (hex_digit <= 'f')
+	for (i = 0; i < 6; i++)
 	{
-		putchar(hex_digit);
-		hex_digit++;
+		putchar('a' + i);
 	}
 
 	putchar('\n');
