@@ -1,3 +1,18 @@
+#include <unistd.h>
+
+/**
+ * print_number - Prints a number
+ * @n: The number to be printed
+ */
+void print_number(int n)
+{
+	if (n == 0)
+		return;
+
+	print_number(n / 10);
+	_putchar((n % 10) + '0');
+}
+
 /**
  * times_table - Prints the 9 times table starting with 0
  */
@@ -30,17 +45,4 @@ void times_table(void)
 				_putchar('\n');
 		}
 	}
-}
-
-/**
- * print_number - Prints a number
- * @n: The number to be printed
- */
-void print_number(int n)
-{
-	if (n == 0)
-		return;
-
-	print_number(n / 10);
-	_putchar((n % 10) + '0');
 }
