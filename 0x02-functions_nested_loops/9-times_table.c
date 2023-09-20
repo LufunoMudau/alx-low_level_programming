@@ -58,6 +58,6 @@ void times_table(void)
  */
 int main(void)
 {
-	time_table();
+	times_table();
 	return (0);
 }
