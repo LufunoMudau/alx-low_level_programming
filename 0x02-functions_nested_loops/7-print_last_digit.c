@@ -1,4 +1,10 @@
 /**
+ * _putchar - Custom function to print a character
+ * @c: The character to be printed
+ */
+void _putchar(char c);
+
+/**
  * print_last_digit - Prints the last digit of a number
  * @n: The number to find the last digit of
  *
