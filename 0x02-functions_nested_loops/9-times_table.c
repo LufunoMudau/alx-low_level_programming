@@ -12,19 +12,12 @@ void _putchar(char c);
  */
 void print_number(int n)
 {
-	if (n == 0)
-		_putchar('0');
+	if (n < 10)
+		_putchar(' ');
 	else
-	{
-		if (n < 0)
-		n = -n;
-
-		if (n / 10)
-			print_number(n / 10);
+		_putchar((n / 10) + '0');
 
 	_putchar((n % 10) + '0');
-
-	}
 }
 
 /**
@@ -41,17 +34,14 @@ void times_table(void)
 			result = i * j;
 
 			if (j == 0)
-				_putchar('0');
+				print_number(result);
 			else
 			{
 				_putchar(',');
 				_putchar(' ');
 
-			if (result < 10)
-				_putchar(' ');
+				print_number(result);
 			}
-
-			print_number(result);
 		}
 		_putchar('\n');
 	}
