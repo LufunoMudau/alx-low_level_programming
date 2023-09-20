@@ -56,14 +56,3 @@ void times_table(void)
 		_putchar('\n');
 	}
 }
-
-/**
- * main - Entry point
- *
- * Return: 0 (Success)
- */
-int main(void)
-{
-	times_table();
-	return (0);
-}
