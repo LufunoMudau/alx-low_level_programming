@@ -1,5 +1,10 @@
 #include <unistd.h>
-#include "main.h"
+
+/**
+ * _putchar - Custom function to print a character
+ * @c: The character to be printed
+ */
+void _putchar(char c);
 
 /**
  * print_number - Prints a number
