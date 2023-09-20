@@ -33,15 +33,11 @@ void times_table(void)
 		{
 			result = i * j;
 
-			if (j == 0)
-				print_number(result);
-			else
-			{
+			if (j != 0)
 				_putchar(',');
-				_putchar(' ');
-
-				print_number(result);
-			}
+			
+			_putchar(' ');
+			print_number(result);
 		}
 		_putchar('\n');
 	}
