@@ -31,3 +31,16 @@ void times_table(void)
 		}
 	}
 }
+
+/**
+ * print_number - Prints a number
+ * @n: The number to be printed
+ */
+void print_number(int n)
+{
+	if (n == 0)
+		return;
+
+	print_number(n / 10);
+	_putchar((n % 10) + '0');
+}
