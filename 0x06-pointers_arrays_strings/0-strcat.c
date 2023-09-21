@@ -3,7 +3,7 @@
  * @dest: Destination string
  * @src: Source string
  *
- * Returun: Pointer to the resulting string (dest)
+ * Return: Pointer to the resulting string (dest)
  */
 char _strcat(char *dest, const char *src)
 {
