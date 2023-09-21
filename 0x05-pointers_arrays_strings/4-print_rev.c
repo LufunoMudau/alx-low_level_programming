@@ -38,7 +38,9 @@ void print_rev(char *s)
 {
 	int length = str_length(s);
 
-	for (int i = length - 1; i >= 0; i--)
+	int i;
+
+	for (i = length - 1; i >= 0; i--)
 	{
 		_putchar(s[i]);
 	}
@@ -53,7 +55,7 @@ void print_rev(char *s)
  */
 int main(void)
 {
-	char str[] = "Hello, world!";
+	char str[] = "Hello, world!"
 
 	print_rev(str);
 
