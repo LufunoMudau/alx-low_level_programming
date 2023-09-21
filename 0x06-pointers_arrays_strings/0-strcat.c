@@ -1,11 +1,11 @@
 /**
- * str_concat - Concatenates two strings
+ * _strcat - Concatenates two strings
  * @dest: Destination string
  * @src: Source string
  *
  * Returun: Pointer to the resulting string (dest)
  */
-char *str_concat(char *dest, const char *src)
+char _strcat(char *dest, const char *src)
 {
 	char *result = dest;
 
