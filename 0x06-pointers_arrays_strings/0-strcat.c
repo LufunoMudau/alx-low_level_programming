@@ -1,28 +1,29 @@
 /**
- * _strcat - Concatenates two strings
- * @dest: Destination string
- * @src: Source string
+ * _strcat - Main function of the prototype
+ * @dest: Concatenation parameter
+ * @src: Concatenation parameter
  *
  * Return: Pointer to the resulting string (dest)
  */
-char _strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-	char *result = dest;
+	int i, j;
 
-	/* Move dest to the end of the destination string */
-	while (*dest)
-		dest++;
+	i = 0;
+	j = 0;
 
-	/* Append the source string to the destination */
-	while (*src)
+	while (dest[i] != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		i++;
 	}
 
-	/* Add a terminating null byte */
-	*dest = '\0';
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
 
-	return (result);
+	return (dest);
 }
