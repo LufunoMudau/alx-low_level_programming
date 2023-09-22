@@ -1,11 +1,12 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _strpbrk - Main function prototype
  * @s: Function parameter
  * @accept: Function parameter
  *
- * Return: Always 0
+ * Return: Null if no such byte is found
  */
 char *_strpbrk(char *s, char *accept)
 {
