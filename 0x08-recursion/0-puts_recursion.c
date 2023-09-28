@@ -1,3 +1,5 @@
+int _putchar(char c);
+
 /**
  * _puts_recursion - Prints a string
  * @s: Pointer to the string
