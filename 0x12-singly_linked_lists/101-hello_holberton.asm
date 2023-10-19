@@ -1,5 +1,5 @@
 section .data
-	hello_fmt db "Hello, Holberton",10,0   ; Format string for printf
+	hello_fmt db "Hello, Holberton\n",10,0   ; Format string for printf
 
 section .text
 	global main
